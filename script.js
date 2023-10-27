@@ -1,5 +1,9 @@
 const generateBtn = document.querySelector('#generateBtn')
+const gridContainer = document.querySelector('#gridContainer')
 
 generateBtn.addEventListener('click', () => {
-    alert('눌리는구나')
+    const img = document.createElement('img');
+    img.src = 'https://picsum.photos/500?random=' + Math.random()*1000+1;
+
+    gridContainer.appendChild(img);
 })
